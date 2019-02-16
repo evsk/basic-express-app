@@ -1,0 +1,10 @@
+extends base.pug
+
+block content
+  h1 Google Search
+  p
+    // google.com/search only accepts get requests
+    form(method="get" action="https://www.google.com/search?") 
+      label(for='q') Search:
+      input(type="text", name="q")
+      input(type="submit", name="Search")
